@@ -1,0 +1,47 @@
+前情回顾
+192.168.196.128
+1.视图
+    作用： 简化复杂的查询操作
+    使数据更加安全 使数据更加清晰
+    create [or replace] view [view名字] as [select语句]
+    drop view [if exists] [view名字]
+
+2.函数和存储过程
+    函数：有返回值 获取一个结果
+    存储过程 没有返回值 注重过程执行
+    delimiter $$
+    create function func(uid int) returns [return_type]
+    begin
+        declare a int;
+        set a =[select语句]
+        函数体
+        return ....;
+    end $$
+    delimiter ;
+
+    delimiter $$
+    create procedure func([in out inout]uid int)
+    begin
+       存储过程语句;
+    end $$
+    delimiter ;
+    --调用--
+    select/call
+    --删除--
+    drop function/procedure [name] ;
+
+3.事务控制
+    事务：一件事情从开始到结束
+    begin commit rollback
+    隔离级别：读未提交 读已提交 可重复度 串行化
+
+
+4.数据库优化
+    *数据库范式 第一第二第三
+    *数据库引擎
+    *字段选择（合适的情况下尽量选择占用空间小的）
+
+
+
+
+

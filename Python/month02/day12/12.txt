@@ -1,0 +1,17 @@
+前程回顾
+
+1. TCP编程
+
+服务端： socket -> bind() ->listen() -> accept()->recv()-> send()->close()
+客户端： socket ----------------------> connect()->send()->recv()->close()
+
+注意事项：
+    1.连接的另一边close退出 recv调用的时候返回空
+    2.缓冲区
+    3.粘包
+
+2.TCP UDP 对比
+    * OSI 七层模型 TCP/IP 模型 的描述
+    * 三次握手 四次挥手
+    * TCP和UDP的对比
+

@@ -1,0 +1,122 @@
+前情回顾
+
+1. 什么是操作系统  OS
+
+   让应用程序更好的调用 计算机硬件资源的平台
+
+2. Linux
+
+   特点 ： 开源  网络功能  跨平台  多用户
+   构成 ： 内核  文件系统  命令解释器   应用
+   使用 ： 服务器系统    智能设备
+
+3. 文件系统
+
+   结构 ：  树形结构
+
+   文件位置的表达 ：  绝对路径  相对路径
+
+4. Linux命令  （shell命令）
+
+   man
+
+   ls  -l   /home/tarena
+
+   cd  mkdir  rm  cat
+   touch  grep  wc cp  mv
+   zip  tar  sudo
+
+   find
+          路径                 要查找的文件
+   find  /home/tarena  -name   demo09.py
+
+   cp
+
+   复制文件夹 -r
+   cp -r homework.txt  dir /home/tarena
+
+   通配符  [] 和 ？都只能代表一个字符
+   rm review.[py][py]
+
+   chmod
+
+   用数字改权限
+   chmod 666 2.txt
+
+   echo
+
+   echo -n "Hello world"
+
+   df 查看硬盘
+
+   echo -n "Hello world"
+
+   which
+
+   which ls
+
+   输出重定向
+   date >> file.txt
+
+   ln  使用绝对路径创建链接
+
+   ln -s /home/tarena/month02/day02/hello.py  /home/tarena/hello
+
+cookie:
+
+   本地deb软件安装
+
+   安装软件 失败
+   sudo dpkg -i youdao-dict_6.0.0-ubuntu-amd64.deb
+
+   解决依赖关系
+   sudo apt --fix-broken install
+
+   从新安装尝试
+   sudo dpkg -i youdao-dict_6.0.0-ubuntu-amd64.deb
+
+ssh 远程登录
+用户： root
+ip : 124.71.190.167
+密码 ： Aid_0000
+
+1.  ssh-keygen  生成秘钥
+2.  cd /home/tarena/.ssh  找到 公钥 id_rsa.pub
+3.  将公钥内容添加到 服务器的 .ssh 中的
+authorized_keys文件下
+
+
+在终端执行Python程序
+
+最后可以增加软连接到 /usr/bin 下
+sudo ln -s /home/tarena/month02/day02/hello.py  /usr/bin/hello
+
+
+Linux 总结
+
+1. Linux 操作系统的构成  特点  应用场景
+2. 掌握 文件结构   绝对路径  相对路径
+3. Linux的常用命令
+4. 压缩解压   创建用户   远程访问   软件安装
+5. 使用vi 进行简单的文本编辑
+
+作业 ： 1. 今天的命令 操作一下
+       2. vi 编写  求 100000 以内的质数之和
+
+          质数 ： 除了1和其本身不能被其他数整除的数
+                 >1的整数
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

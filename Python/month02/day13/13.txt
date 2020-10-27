@@ -1,0 +1,26 @@
+前情回顾
+
+1.多任务编程
+
+    多任务：一个计算机能同时做多件事儿
+    cpu机制：轮询机制 多核CPU 并发和并行
+    多任务编程： 一个程序同时可以启动多个任务
+
+2.进程
+
+    一个执行过程 占有系统中的运行资源
+    PID 进程状态 父子进程 孤儿进程 僵尸进程
+    ps -aux pstree
+
+
+3.multiprocessing
+
+    p = Process()
+    p.start()
+    p.join()
+    p.pid  p.name p.daemon
+    os.getpid() os.getppid()  sys.exit('info')
+
+4.自定义进程类
+
+

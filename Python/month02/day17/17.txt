@@ -1,0 +1,25 @@
+前情回顾
+
+1.非阻塞IO
+
+  setblocking()
+  settimeout()
+
+2.IO 多路复用
+
+  select
+
+  poll
+
+  epoll
+
+  * 区别
+
+3.基于IO多路复用的网路并发模型
+
+4.高并发
+
+  衡量指标  综合的技术
+
+
+
